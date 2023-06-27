@@ -20,7 +20,7 @@ const NavHeader = styled.header<{ scrollNavbar?: boolean }>`
 `;
 
 const NavContent = styled.div`
-  ${tw`flex items-center text-white justify-between px-5 md:px-10 lg:px-0 py-5`}
+  ${tw`flex items-center text-white justify-between lg:px-0 py-5`}
 `;
 const Logo = styled.img`
   ${tw`cursor-pointer`}
@@ -35,7 +35,10 @@ const ButtonContainer = styled.div`
 `;
 const NavContentFirstContainer = styled.div`
   ${tw`flex items-center justify-between gap-14`}
-  flex-basis:63%;
+  flex-basis:63%
+  
+  @media screen and (min-width:768px) {
+  }
 `;
 
 const MobileMenu = styled.ul`

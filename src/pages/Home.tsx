@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styled from "styled-components";
 import tw from "twin.macro";
 // import { UI } from "../components/UI";
@@ -52,5 +53,16 @@ export const Home = () => {
       officiis, amet aspernatur eum quis id optio quidem ducimus excepturi,
       accusantium vitae animi.
     </Container>
+=======
+import { EmpowerWomen } from "../components/UI/Empower";
+import { Hero } from "../components/UI/Hero";
+
+export const Home = () => {
+  return (
+    <>
+      <Hero />
+      <EmpowerWomen />
+    </>
+>>>>>>> 1b60d2c79930ff2e6855a1805d88e208806c4f0b
   );
 };

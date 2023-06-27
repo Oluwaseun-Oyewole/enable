@@ -2,7 +2,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const Container = styled.div`
-  ${tw`max-w-7xl mx-auto`}
+  ${tw`max-w-7xl mx-auto px-7 xl:px-0 relative`}
 `;
 
 export const ContainerFlex = styled.div`
