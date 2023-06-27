@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import styled from "styled-components";
 import { default as tw } from "twin.macro";
 
@@ -10,25 +11,42 @@ export interface ButtonInterface
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit" | "reset" | undefined;
-  children?: string;
+  children: ReactElement | string;
+  icon?: ReactElement | undefined;
+  btnFlex?: boolean;
 }
 
 const ButtonStyles = styled.button<{
   background?: string;
   color?: string;
+  icon?: string;
+  btnFlex?: boolean;
 }>`
-  ${tw`transition-all ease-in-out duration-700`}
+  ${tw`transition-all ease-in-out duration-700 relative`}
+  ${({ btnFlex }) => btnFlex && tw`rounded-l-lg`}
 `;
 
+const IconStyles = styled.div`
+  ${tw`absolute -left-5 -top-1 w-full`}
+`;
 export const Button = ({
   children,
   type,
   onClick,
   className,
+  icon,
+  btnFlex,
 }: ButtonInterface) => {
+  console.log("icon", icon);
+
   return (
-    <ButtonStyles type={type} onClick={onClick} className={className}>
-      {children}
+    <ButtonStyles
+      type={type}
+      onClick={onClick}
+      className={className}
+      btnFlex={btnFlex}
+    >
+      <IconStyles> {icon}</IconStyles> {children}
     </ButtonStyles>
   );
 };

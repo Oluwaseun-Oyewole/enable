@@ -18,3 +18,21 @@
   transform-origin: 0%;
   height: 10px;
 }
+
+/* .swiper-button-next {
+  font-size: 20px !important;
+  right: 0;
+  color: purple;
+}
+
+.swiper-button-prev {
+  font-size: 20px !important;
+  color: purple;
+  position: absolute;
+  left: -20px;
+  z-index: 10000;
+} */
+
+.swiper-slide {
+  font-size: 18px;
+}

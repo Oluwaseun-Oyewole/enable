@@ -11,10 +11,10 @@ const LayoutContainer = styled.div`
 `;
 
 const Container = styled.main<{ click?: boolean }>`
-  ${tw`px-10 lg:px-0 max-w-7xl mx-auto font-poppins`};
+  ${tw`font-poppins`};
   ${({ click }) =>
     click
-      ? tw`bg-gray-500 transition-all ease-in-out duration-700 blur-[1px] lg:bg-transparent`
+      ? tw`bg-gray-300 transition-all ease-in-out duration-700 blur-[1px] lg:bg-transparent`
       : tw`bg-white`}
 `;
 export const Layout = () => {
@@ -30,7 +30,7 @@ export const Layout = () => {
   return (
     <LayoutContainer>
       <Navigation />
-      <motion.div className="progress-bar mt-0" style={{ scaleX }} />
+      <motion.div className="progress-bar mt-20" style={{ scaleX }} />
       <Container click={click}>
         <Outlet />
       </Container>
