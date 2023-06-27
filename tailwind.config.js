@@ -9,6 +9,15 @@ export default {
       },
       colors: {
         purple: "#530054",
+        empower: "#FCF5FF",
+        body: "#777",
+        progressGreen: "#30B700",
+        progressBackground: "#EEE",
+      },
+      backgroundImage: {
+        hero_bg: "url('/src/assets/hero-bg.svg')",
+        "hero-pattern":
+          "linear-gradient(to right bottom, rgba('#7ed56f',0.8), rgba('#28b485',0.8)), url('/src/assets/hero.svg')",
       },
     },
   },
