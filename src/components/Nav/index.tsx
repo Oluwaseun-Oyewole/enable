@@ -11,17 +11,18 @@ import { Button } from "../atom/button";
 import { Container } from "../shared";
 
 const NavHeader = styled.header<{ scrollNavbar?: boolean }>`
-  ${tw` bg-purple text-sm py-5 font-poppins transition-all ease-in-out duration-500 left-0 w-full fixed top-0`}
+  ${tw` bg-purple text-sm  font-poppins transition-all ease-in-out duration-500 fixed w-full`}
   backdrop-filter: ${({ scrollNavbar }) => (scrollNavbar ? "blur(4px)" : "")}
 `;
 const NavContainer = styled.div`
   ${tw``}
 `;
 const NavContent = styled.div`
-  ${tw`flex items-center text-white justify-between px-5 md:px-10 lg:px-0`}
+  ${tw`flex items-center text-white justify-between px-5 md:px-10 lg:px-0 h-24`}
 `;
 const Logo = styled.img`
   ${tw`cursor-pointer`}
+  width:120px;
 `;
 const NavMenu = styled.ul`
   ${tw`list-none gap-10 hidden lg:flex`}
@@ -32,7 +33,7 @@ const ButtonContainer = styled.div`
 `;
 const NavContentFirstContainer = styled.div`
   ${tw`flex items-center justify-between gap-14`}
-  flex-basis:60%;
+  flex-basis:63%;
 `;
 
 const MobileMenu = styled.ul`
@@ -90,59 +91,19 @@ export const MobileIcon = styled.div`
 
 export const MobileContainer = styled.div<{
   click?: boolean;
-  scrollNavbar?: boolean;
 }>`
-  ${tw`flex flex-col items-center justify-center gap-8 top-[11.5vh] h-[88.5vh] lg:hidden absolute overflow-y-hidden w-full md:w-1/2 transition-all ease-in-out duration-500 shadow-2xl  text-purple  bg-white `};
+  ${tw`flex flex-col items-center justify-center gap-8 lg:hidden overflow-y-hidden w-full md:w-1/2 overflow-hidden transition-all ease-in-out duration-500 shadow-2xl  text-purple  bg-white fixed min-h-screen z-20`};
   left: ${({ click }) => (click ? "0" : "-100%")};
 `;
 
 export const Navigation = () => {
   const [click, setClick] = useState(false);
 
-  const [scrollNavbar, setScrollNavbar] = useState<boolean>(false);
-
-  const changeBackground = () => {
-    if (window.pageYOffset >= 10) {
-      setScrollNavbar(true);
-    } else {
-      setScrollNavbar(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-  }, []);
-
-  const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
-  };
-
   const toggleHome = (): void => {
     animateScroll.scrollToTop();
   };
 
   const handleClick = () => setClick(!click);
-
-  const sidebar = {
-    open: (height = 1000) => ({
-      clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-      transition: {
-        type: "spring",
-        stiffness: 20,
-        restDelta: 2,
-      },
-    }),
-    closed: {
-      clipPath: "circle(30px at 40px 40px)",
-      transition: {
-        delay: 0.5,
-        type: "spring",
-        stiffness: 400,
-        damping: 40,
-      },
-    },
-  };
 
   return (
     <NavHeader>
@@ -176,7 +137,7 @@ export const Navigation = () => {
               <CiGlobe size={25} />
               <Button
                 children="Get A loan"
-                className="bg-white text-purple text-sm px-5 py-2"
+                className="bg-white text-purple text-sm px-6 py-[10px] hover:opacity-80"
               />
             </ButtonContainer>
 

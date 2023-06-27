@@ -1,4 +1,5 @@
 import { motion, useScroll, useSpring } from "framer-motion";
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -25,7 +26,7 @@ export const Layout = () => {
       <nav>
         <Navigation />
       </nav>
-      <motion.div className="progress-bar mt-20" style={{ scaleX }} />
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <Container>
         <Outlet />
       </Container>

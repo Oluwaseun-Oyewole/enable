@@ -8,8 +8,6 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        baseBlack: "red",
-        heroColor: "#1E1E1E",
         purple: "#530054",
       },
     },
