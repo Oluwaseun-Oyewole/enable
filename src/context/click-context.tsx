@@ -25,7 +25,8 @@ const ClickInitialState: UseClickContext = {
   },
 };
 
-const CreateClickContext = createContext<UseClickContext>(ClickInitialState);
+export const CreateClickContext =
+  createContext<UseClickContext>(ClickInitialState);
 
 export const ClickContextProvider = ({ children }: ChildrenInterface) => {
   return (
@@ -33,8 +34,4 @@ export const ClickContextProvider = ({ children }: ChildrenInterface) => {
       {children}
     </CreateClickContext.Provider>
   );
-};
-
-export const useClickContextProvider = () => {
-  return useContext(CreateClickContext);
 };
