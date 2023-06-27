@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { CiGlobe } from "react-icons/ci";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -7,6 +6,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import Enable from "../../assets/Logo.svg";
 import { navigationLinks } from "../../constants";
+import { useClickContextProvider } from "../../context/click-context";
 import { Button } from "../atom/button";
 import { Container } from "../shared";
 
@@ -97,13 +97,10 @@ export const MobileContainer = styled.div<{
 `;
 
 export const Navigation = () => {
-  const [click, setClick] = useState(false);
-
+  const { click, handleClick } = useClickContextProvider();
   const toggleHome = (): void => {
     animateScroll.scrollToTop();
   };
-
-  const handleClick = () => setClick(!click);
 
   return (
     <NavHeader>
