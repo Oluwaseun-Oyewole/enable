@@ -4,6 +4,9 @@ import Hammage from "../assets/hamzat1.svg";
 import Market from "../assets/mark.png";
 import W from "../assets/pexels.jpg";
 import TailorImage from "../assets/tailor.svg";
+import getloan from "../assets/getloan.svg";
+import guloan from "../assets/gurantee.svg";
+import giveloan from "../assets/giveloan.svg";
 
 interface NavigationInterface {
   title: string;
@@ -167,5 +170,32 @@ export const blogData: BlogType[] = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     image: BlogImage,
     activeBtn: false,
+  },
+];
+
+type GridType = {
+  img?: string;
+  title?: string;
+  paragraph?: string;
+};
+
+export const gridData: GridType[] = [
+  {
+    img: getloan,
+    title: "Get Loan",
+    paragraph:
+      "Borrow to start or grow your business.No collateral. No interest if you pay back when due.",
+  },
+  {
+    img: guloan,
+    title: "Guarantee a loan",
+    paragraph:
+      "If you guarantee a woman's loan repayment, you improve their chances of getting access to credit. You can assure repayment of as little as N20,000.",
+  },
+  {
+    img: giveloan,
+    title: "Give Loan",
+    paragraph:
+      "Lend to enterprising low-income women to do business and earn income to support themselves and children.",
   },
 ];
