@@ -14,6 +14,7 @@ export interface ButtonInterface
   children: ReactElement | string;
   icon?: ReactElement | undefined;
   btnFlex?: boolean;
+  buttonIcon?: ReactElement | undefined;
 }
 
 const ButtonStyles = styled.button<{
@@ -21,9 +22,12 @@ const ButtonStyles = styled.button<{
   color?: string;
   icon?: string;
   btnFlex?: boolean;
+  buttonIcon?: ReactElement;
 }>`
   ${tw`transition-all ease-in-out duration-700 relative`}
   ${({ btnFlex }) => btnFlex && tw`rounded-l-lg`}
+  ${({ buttonIcon }) =>
+    buttonIcon && tw`flex items-center justify-center gap-2`}
 `;
 
 const IconStyles = styled.div`
@@ -36,17 +40,17 @@ export const Button = ({
   className,
   icon,
   btnFlex,
+  buttonIcon,
 }: ButtonInterface) => {
-  console.log("icon", icon);
-
   return (
     <ButtonStyles
       type={type}
       onClick={onClick}
       className={className}
       btnFlex={btnFlex}
+      buttonIcon={buttonIcon}
     >
-      <IconStyles> {icon}</IconStyles> {children}
+      <IconStyles> {icon}</IconStyles> {children} {buttonIcon}
     </ButtonStyles>
   );
 };
