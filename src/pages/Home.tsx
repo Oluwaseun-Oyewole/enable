@@ -1,3 +1,5 @@
+import { Blog } from "../components/UI/Blog";
+import { Building } from "../components/UI/Building";
 import { EmpowerWomen } from "../components/UI/Empower";
 import { Hero } from "../components/UI/Hero";
 import { GridCards } from "../components/UI/GridCard";
@@ -8,7 +10,8 @@ export const Home = () => {
       <Hero />
       <GridCards />
       <EmpowerWomen />
-      <SchoolMoni />
+      <Building />
+      <Blog />
     </>
   );
 };

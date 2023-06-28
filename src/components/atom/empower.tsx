@@ -34,7 +34,7 @@ const EmpowerPargraph = styled.p`
   ${tw`md:w-[80%] xl:w-[62%] text-body py-5 lg:text-center text-sm md:text-base`}
 `;
 const EmpowerContainer = styled.section`
-  ${tw`bg-empower md:py-10 min-h-screen`}
+  ${tw`bg-empower py-10`}
 `;
 
 const EmpowerHeadingContainer = styled.div`
@@ -102,7 +102,7 @@ export const Empower = ({ heading, paragraph, data }: EProps) => {
                 <SwiperSlide>
                   <div
                     key={index}
-                    className="min-h-2 bg-white shadow-xl rounded-sm"
+                    className="bg-white shadow-xl rounded-sm hover:bg-gray-100 transition-all ease-in-out duration-1000 cursor-pointer"
                   >
                     <EmpowerImage src={d?.img} />
                     <div className="p-4 text-sm">
@@ -126,7 +126,7 @@ export const Empower = ({ heading, paragraph, data }: EProps) => {
                       </div>
                       {/* progress bar */}
                       <div className="flex justify-end">
-                        <img src={FlowerImage} alt="" />
+                        <img src={FlowerImage} alt="flower" />
                       </div>
                       <Button
                         children="Guarantee A Loan"
