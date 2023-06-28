@@ -110,7 +110,6 @@ export const Navigation = () => {
 
   return (
     <Nav>
-      {" "}
       <NavHeader scrollNavbar={scrollNavbar}>
         <Container>
           <>

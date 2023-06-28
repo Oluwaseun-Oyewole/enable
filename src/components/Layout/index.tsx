@@ -14,7 +14,7 @@ const Container = styled.main<{ click?: boolean }>`
   ${tw`font-poppins`};
   ${({ click }) =>
     click
-      ? tw`bg-gray-300 transition-all ease-in-out duration-700 blur-[1px] lg:bg-transparent`
+      ? tw`bg-gray-200 transition-all ease-in-out duration-700 blur-[1px] lg:bg-transparent`
       : tw`bg-white`}
 `;
 export const Layout = () => {
@@ -25,13 +25,13 @@ export const Layout = () => {
     restDelta: 0.001,
   });
 
-  const { click } = useClickContextProvider();
+  const { click, setClick } = useClickContextProvider();
 
   return (
     <LayoutContainer>
       <Navigation />
       <motion.div className="progress-bar mt-20" style={{ scaleX }} />
-      <Container click={click}>
+      <Container click={click} onClick={() => setClick(false)}>
         <Outlet />
       </Container>
       <UI />
