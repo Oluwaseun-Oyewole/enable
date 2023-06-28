@@ -5,7 +5,6 @@ import tw from "twin.macro";
 import { Footer } from "../Footer";
 import { Navigation } from "../Nav";
 import { useClickContextProvider } from "../hooks/use-click";
-import { UI } from "../UI";
 const LayoutContainer = styled.div`
   ${tw``}
 `;
@@ -34,7 +33,6 @@ export const Layout = () => {
       <Container click={click}>
         <Outlet />
       </Container>
-      <UI />
       <footer>
         <Footer />
       </footer>

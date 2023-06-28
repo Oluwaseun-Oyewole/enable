@@ -1,7 +1,13 @@
-import Ayro from "../assets/Ayro UI.svg";
 import HamzatImage from "../assets/hamzat.svg";
 import Hammage from "../assets/hamzat1.svg";
 import TailorImage from "../assets/tailor.svg";
+import getloan from "../assets/getloan.svg";
+import guloan from "../assets/gurantee.svg";
+import giveloan from "../assets/giveloan.svg";
+import Ayro from "../assets/Ayro UI.svg";
+import lineicons from "../assets/lineicons.svg";
+import Gray from "../assets/GrayGrids.svg";
+import uideck from "../assets/Uideck.svg";
 
 interface NavigationInterface {
   title: string;
@@ -28,7 +34,11 @@ interface EmpowerWomen {
   guarantee?: string;
   progressWidth?: string;
 }
-
+interface GridCards {
+  img?: string;
+  heading?: string;
+  paragraph?: string;
+}
 export const empowerData: EmpowerWomen[] = [
   {
     img: HamzatImage,
@@ -112,4 +122,27 @@ export const empowerData: EmpowerWomen[] = [
   },
 ];
 
-export const progress = [];
+export const gridData: GridCards[] = [
+  {
+    img: getloan,
+    heading: "Get Loan",
+    paragraph:
+      "Borrow to start or grow your business No collateral. No interest if you pay back when due",
+  },
+  {
+    img: guloan,
+    heading: "Guarantee a loan",
+    paragraph:
+      "If you guarantee a woman's loan repayment, you improve their chances of getting access to credit. You can assure repayment of as little as N20,000.",
+  },
+  {
+    img: giveloan,
+    heading: "Give loan",
+    paragraph:
+      "Lend to enterprising low-income women to do business and earn income to support themselves and children.",
+  },
+];
+
+export const progress = [{}];
+
+export const logos = [Ayro, lineicons, Gray, uideck];
