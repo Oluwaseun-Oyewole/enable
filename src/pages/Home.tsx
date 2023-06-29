@@ -14,7 +14,7 @@ export const Home = () => {
       <SchoolMoni />
       <Building />
       <Blog />
-      {/* <Partners /> */}
+      <Partners />
     </>
   );
 };

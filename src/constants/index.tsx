@@ -271,8 +271,8 @@ export const servicedLink = [
 ];
 
 export const partnerLogos = [
-  "../assets/Ayro UI.svg",
-  "../assets/GrayGrids.svg",
-  "../assets/lineicons.svg",
-  "../assets/Uideck.svg",
+  "/src/assets/Ayro.svg",
+  "/src/assets/GrayGrids.svg",
+  "/src/assets/lineicons.svg",
+  "/src/assets/Uideck.svg",
 ];
