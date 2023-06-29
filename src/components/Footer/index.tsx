@@ -32,17 +32,7 @@ const ContainerLink = styled.div`
   ${tw`pb-6 md:pb-0`}
 `;
 const FlexContainer = styled.div`
-  ${tw`flex-col lg:flex-row flex justify-between items-start`}
-
-  @media screen and (max-width: 1024px) {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  @media screen and (max-width: 500px) {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+  ${tw`grid xl:grid-cols-5 md:grid-cols-1 gap-3`}
 `;
 
 export const Footer = () => {
@@ -61,7 +51,8 @@ export const Footer = () => {
           <div>
             <img src={logo} />
             <p className="py-5">
-              Reach out to us on any <br /> of our social media networks
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo, neque.
             </p>
             <p>
               {/* <span>{LuPhoneCall}</span> */}
