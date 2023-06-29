@@ -36,7 +36,7 @@ const FlexContainer = styled.div`
 
   @media screen and (max-width: 1024px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   @media screen and (max-width: 500px) {
@@ -49,7 +49,7 @@ export const Footer = () => {
   return (
     <div className="bg-purple text-white mt-20 py-20">
       <Container>
-        <p className="pb-[5rem]">
+        <p className="pb-[5rem] px-5">
           Disclaimer: Enable is not in the business of lending. Enable is a
           social enterprise that gets women loan ready and facilitates access to
           credit given by partner digital lenders and financial institutions
@@ -85,7 +85,7 @@ export const Footer = () => {
           </ContainerLink>
 
           <ContainerLink className="pt-8 md:pt-0">
-            <HeadLink>Company</HeadLink>
+            <HeadLink>Serviced</HeadLink>
             <div>
               {servicedLink?.map((link, index) => {
                 return (
