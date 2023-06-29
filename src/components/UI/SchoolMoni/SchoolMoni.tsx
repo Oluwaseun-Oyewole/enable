@@ -15,7 +15,7 @@ const HeroParagraph = styled.p`
   ${tw` py-5 lg:py-5 lg:w-[85%] xl:w-[89%] text-sm lg:text-sm text-gray-700 text-left md:text-left`}
 `;
 const HeroButtonContainer = styled.div`
-  ${tw`mt-5 w-full xl:w-[100%]  flex md:flex-row md:gap-10 flex-col`}
+  ${tw`mt-5 w-full xl:w-[100%] flex  md:flex-row md:gap-10 flex-col`}
 `;
 const HeroHero = styled.div`
   ${tw`lg:flex items-center flex-col md:flex-row xl:justify-between md:px-10 py-24 md:gap-4`}
@@ -27,7 +27,7 @@ const HeroHero = styled.div`
     `}
   }
   > img {
-    ${tw`xl:w-[40%] w-full`}
+    ${tw`xl:w-[40%] w-full block mx-auto`}
   }
 `;
 
@@ -52,11 +52,11 @@ export const SchoolMoni = () => {
             <HeroButtonContainer>
               <Button
                 children="Guarantee A Loan"
-                className="mt-5 bg-purple font-bold px-8 hover:opacity-80 py-4 text-white text-sm mb-2"
+                className="mt-5 bg-purple font-bold  md:px-3 xl:px-8 hover:opacity-80 py-4 text-white text-sm mb-2"
               />
               <Button
                 children="Guarantee SchoolMoni"
-                className="mt-5 border-purple border-4 bg-white text-purple px-8 hover:opacity-80 py-3 md:font-bold text-sm mb-2 "
+                className="mt-5 border-purple border-4 bg-white text-purple xl:px-8 md:px-3 hover:opacity-80 py-3 md:font-bold text-sm mb-2 "
               />
             </HeroButtonContainer>
           </div>
