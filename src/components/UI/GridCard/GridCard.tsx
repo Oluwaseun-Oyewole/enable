@@ -18,7 +18,7 @@ const GridCardParagraph = styled.p`
 `;
 
 const GridImage = styled.img`
-  ${tw`md:w-[40%] w-[30%]`}
+  ${tw`w-[25%]`}
 `;
 
 const GridContainer = styled.section`
@@ -30,13 +30,13 @@ export const GridCard = () => {
     <GridContainer className="bg-purple">
       <Container>
         <GridCards>
-          {gridData?.map((blog, index) => {
+          {gridData?.map((grid, index) => {
             return (
               <div key={index}>
-                <GridImage src={blog?.img} />
+                <GridImage src={grid?.img} />
                 <GridContentContainer>
-                  <GridCardTitle>{blog?.title}</GridCardTitle>
-                  <GridCardParagraph>{blog?.paragraph}</GridCardParagraph>
+                  <GridCardTitle>{grid?.title}</GridCardTitle>
+                  <GridCardParagraph>{grid?.paragraph}</GridCardParagraph>
                 </GridContentContainer>
               </div>
             );

@@ -7,16 +7,12 @@ import TailorImage from "../assets/tailor.svg";
 import getloan from "../assets/getloan.svg";
 import guloan from "../assets/gurantee.svg";
 import giveloan from "../assets/giveloan.svg";
-
+import { BsFacebook, BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
 interface NavigationInterface {
   title: string;
   pathname: string;
   scrollOffset?: number;
 }
-// interface FooterInterface {
-//   title: string;
-//   pathname: string;
-// }
 
 export const navigationLinks: Array<NavigationInterface> = [
   { title: "What we do", pathname: "/", scrollOffset: -50 },
@@ -198,4 +194,85 @@ export const gridData: GridType[] = [
     paragraph:
       "Lend to enterprising low-income women to do business and earn income to support themselves and children.",
   },
+];
+
+type LogoType = {
+  img?: string;
+};
+export const logos: LogoType[] = [
+  {
+    img: "grayGrid",
+  },
+  {
+    img: "linecoins",
+  },
+  {
+    img: "Uideck",
+  },
+  {
+    img: "Ayro",
+  },
+];
+
+export const socials = [
+  {
+    icon: BsFacebook,
+    size: 30,
+  },
+  {
+    icon: BsTwitter,
+    size: 30,
+  },
+  {
+    icon: BsYoutube,
+    size: 30,
+  },
+  {
+    icon: BsInstagram,
+    size: 30,
+  },
+];
+
+export const companyLink = [
+  {
+    title: "About Us",
+    pathname: "/",
+  },
+  {
+    title: "Our Impact",
+    pathname: "/",
+  },
+  {
+    title: "FAQs",
+    pathname: "/",
+  },
+  {
+    title: "Contact & Support",
+    pathname: "/",
+  },
+];
+export const servicedLink = [
+  {
+    title: "Apply for loan",
+    pathname: "/",
+  },
+  {
+    title: "Sponsor",
+    pathname: "/",
+  },
+  {
+    title: "Projects",
+    pathname: "/",
+  },
+  {
+    title: "SchoolMoni",
+    pathname: "/",
+  },
+];
+
+export const partnerLogos = [
+  "../assets/Ayro UI.svg",
+  "../assets/GrayGrids.svg",
+  "../assets/lineicons.svg",
+  "../assets/Uideck.svg",
 ];
