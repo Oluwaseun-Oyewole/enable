@@ -10,9 +10,6 @@ const HeroHeading = styled.h1`
 const HeadingSpan = styled.span`
   ${tw`text-purple`}
 `;
-// const HeroContent = styled.p`
-//   ${tw`xl:-mt-32 `}
-// `;
 
 const HeroParagraph = styled.p`
   ${tw` py-5 lg:py-5 lg:w-[85%] xl:w-[89%] text-sm lg:text-sm text-gray-700 text-left md:text-left`}
@@ -33,12 +30,10 @@ const HeroHero = styled.div`
     ${tw`xl:w-[40%] w-full`}
   }
 `;
-// [#FCF5FF];
 
 export const SchoolMoni = () => {
   return (
     <div className="my-[5rem]">
-      {/* <HeroContainer> */}
       <Container className="bg-[#FCF5FF]">
         <HeroHero>
           <>

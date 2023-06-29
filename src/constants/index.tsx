@@ -196,24 +196,6 @@ export const gridData: GridType[] = [
   },
 ];
 
-type LogoType = {
-  img?: string;
-};
-export const logos: LogoType[] = [
-  {
-    img: "grayGrid",
-  },
-  {
-    img: "linecoins",
-  },
-  {
-    img: "Uideck",
-  },
-  {
-    img: "Ayro",
-  },
-];
-
 export const socials = [
   {
     icon: BsFacebook,

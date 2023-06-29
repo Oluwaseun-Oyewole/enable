@@ -20,7 +20,6 @@ export const Partners = () => {
             </Glogos>
           </div>
         </Marquee>
-        {/* <img src={ayro} alt="" /> */}
       </Container>
     </div>
   );
