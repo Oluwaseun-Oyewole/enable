@@ -9,7 +9,7 @@ export const Hero = () => {
       subheading="and families to
     prosper"
       spanText="Women"
-      descriptions="    Lorem ipsum dolor sit amet consectetur. Sed scelerisque commodo
+      descriptions="Lorem ipsum dolor sit amet consectetur. Sed scelerisque commodo
             nisldd amet dolor nulla eu fusce. Ridiculus viverra justo nisl
             vitae. Iaculis blandit urna ut pretium neque morbi sit tortor
             id. Lobortis cras amet lectus nulla dignissim ultricies ipsum

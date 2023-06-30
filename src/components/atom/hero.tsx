@@ -17,7 +17,7 @@ type HeroPropsType = {
   buttonIcon?: ReactElement | undefined;
 };
 const HeroHeading = styled.h1`
-  ${tw`font-extrabold text-[30px] md:text-[47px] lg:text-[55px] xl:text-[48px] `}
+  ${tw`font-extrabold text-[30px] md:text-[47px] lg:text-[55px] xl:text-[52px]`}
 `;
 
 const HeadingSpan = styled.span`
@@ -35,21 +35,21 @@ const HeroButtonContainer = styled.div`
   ${tw`mt-5 w-full xl:w-[70%] flex md:flex-row md:gap-10 flex-col gap-3`}
 `;
 const HeroContainer = styled.section`
-  ${tw`bg-no-repeat bg-cover w-full bg-hero_bg`}
+  ${tw`bg-no-repeat bg-cover w-full bg-hero_bg xl:min-h-[60vh]`}
 `;
 
 const HeroImage = styled.img`
   ${tw`pt-10 md:pt-24 xl:pt-0`}
 `;
 const HeroHero = styled.div`
-  ${tw`lg:flex items-center flex-col xl:flex-row xl:justify-between pt-10 xl:pt-24`}
+  ${tw`md:flex items-center flex-col xl:flex-row xl:justify-between pt-10 xl:pt-24`}
 
   >div {
     width: 50%;
     ${tw`xl:w-[50%] w-full`}
   }
   > img {
-    ${tw`xl:w-[50%] w-full`}
+    ${tw`md:w-[75%] xl:w-[50%] w-full`}
   }
 `;
 

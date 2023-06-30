@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import tw from "twin.macro";
-import { Container } from "../../shared";
 import logo from "../../../assets/momiselfie.svg";
 import { Button } from "../../atom/button";
+import { Container } from "../../shared";
+
 const HeroHeading = styled.h1`
-  ${tw`font-bold pt-5 md:pt-5 xl:pt-0 text-[20px] md:text-[25px] lg:text-[27px] xl:text-[33px] xl:text-left`}
+  ${tw`font-bold pt-5 md:pt-5 xl:pt-0 text-[20px] md:text-[25px] lg:text-[27px] xl:text-[33px] xl:text-left font-poppins`}
 `;
 
 const HeadingSpan = styled.span`
@@ -15,10 +16,10 @@ const HeroParagraph = styled.p`
   ${tw` py-5 lg:py-5 lg:w-[85%] xl:w-[89%] text-sm lg:text-sm text-gray-700 text-left md:text-left`}
 `;
 const HeroButtonContainer = styled.div`
-  ${tw`mt-5 w-full xl:w-[100%] flex  md:flex-row md:gap-10 flex-col`}
+  ${tw`mt-3 w-full flex  md:flex-row md:gap-10 flex-col`}
 `;
 const HeroHero = styled.div`
-  ${tw`lg:flex items-center flex-col md:flex-row xl:justify-between md:px-10 py-24 md:gap-4`}
+  ${tw`lg:flex items-center flex-col md:flex-row xl:justify-between md:px-10 py-16 md:gap-4`}
 
   > div {
     width: 50%;
@@ -51,12 +52,12 @@ export const SchoolMoni = () => {
             </HeroParagraph>
             <HeroButtonContainer>
               <Button
-                children="Guarantee A Loan"
-                className="mt-5 bg-purple font-bold  md:px-3 xl:px-8 hover:opacity-80 py-4 text-white text-sm mb-2"
+                children="Get SchoolMoni"
+                className="mt-5 bg-purple font-medium md:px-3 xl:px-8 hover:opacity-80 py-4 text-white text-sm rounded-md"
               />
               <Button
                 children="Guarantee SchoolMoni"
-                className="mt-5 border-purple border-4 bg-white text-purple xl:px-8 md:px-3 hover:opacity-80 py-3 md:font-bold text-sm mb-2 "
+                className="mt-5 border-purple border-2 bg-white text-purple xl:px-8 md:px-3 hover:opacity-80 py-3 md:font-medium text-sm rounded-md"
               />
             </HeroButtonContainer>
           </div>

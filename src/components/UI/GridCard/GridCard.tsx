@@ -4,13 +4,13 @@ import { gridData } from "../../../constants";
 import { Container } from "../../shared";
 
 const GridCards = styled.div`
-  ${tw`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10`}
+  ${tw`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-10 justify-center`}
 `;
 const GridContentContainer = styled.div`
-  ${tw`py-5 pr-14 pl-2`}
+  ${tw`py-5 lg:pr-14`}
 `;
 const GridCardTitle = styled.h2`
-  ${tw` text-[20px] font-medium text-white `}
+  ${tw` text-[20px] font-medium text-white`}
 `;
 
 const GridCardParagraph = styled.p`
@@ -18,7 +18,7 @@ const GridCardParagraph = styled.p`
 `;
 
 const GridImage = styled.img`
-  ${tw`w-[25%]`}
+  ${tw`w-[20%] xl:w-[18%]`}
 `;
 
 const GridContainer = styled.section`

@@ -1,12 +1,10 @@
 import React from "react";
-import { socials } from "../../constants";
-import { Container } from "../shared";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import tw from "twin.macro";
 import logo from "../../assets/Logo.svg";
-import { companyLink, servicedLink } from "../../constants";
-import { LuPhoneCall } from "react-icons/lu";
+import { companyLink, servicedLink, socials } from "../../constants";
+import { Container } from "../shared";
 const Links = styled.ul`
   li {
     list-style: none;
@@ -37,9 +35,9 @@ const FlexContainer = styled.div`
 
 export const Footer = () => {
   return (
-    <div className="bg-purple text-white mt-20 py-20">
+    <div className="bg-purple text-white mt-20 py-20 font-poppins">
       <Container>
-        <p className="pb-[5rem] px-5">
+        <p className="pb-[5rem]">
           Disclaimer: Enable is not in the business of lending. Enable is a
           social enterprise that gets women loan ready and facilitates access to
           credit given by partner digital lenders and financial institutions
@@ -48,7 +46,7 @@ export const Footer = () => {
           women.
         </p>
         <FlexContainer>
-          <div>
+          <div className="font-[400] text-[15px]">
             <img src={logo} />
             <p className="py-5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -66,7 +64,7 @@ export const Footer = () => {
               {companyLink?.map((link, index) => {
                 return (
                   <Links>
-                    <li key={index}>
+                    <li key={index} className="font-[400] text-[15px]">
                       <Link to={link.pathname}>{link.title}</Link>
                     </li>
                   </Links>
@@ -76,12 +74,12 @@ export const Footer = () => {
           </ContainerLink>
 
           <ContainerLink className="pt-8 md:pt-0">
-            <HeadLink>Serviced</HeadLink>
+            <HeadLink>Services</HeadLink>
             <div>
               {servicedLink?.map((link, index) => {
                 return (
                   <Links>
-                    <li key={index}>
+                    <li key={index} className="font-[400]">
                       <Link to={link.pathname}>{link.title}</Link>
                     </li>
                   </Links>
@@ -92,7 +90,7 @@ export const Footer = () => {
           <ContainerLink>
             <HeadLink>Contact</HeadLink>
 
-            <Links>
+            <Links className="font-[400] text-[15px]">
               {/* <ul> */}
               <li>
                 <a href="#">info@destinytrust.org</a>
@@ -110,7 +108,7 @@ export const Footer = () => {
           </ContainerLink>
 
           <div>
-            <HeadLink>Follow Us on</HeadLink>
+            <HeadLink>Follow Us On</HeadLink>
 
             <HeadSocial>
               {socials?.map((social, index) => (
