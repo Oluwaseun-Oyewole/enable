@@ -4,11 +4,11 @@ import { building } from "../../../constants";
 import { Button } from "../../atom/button";
 
 const Title = styled.h1`
-  ${tw`pt-5 xl:pt-10 text-2xl xl:text-4xl font-medium`}
+  ${tw`pt-5 xl:pt-10 text-2xl xl:text-3xl font-medium`}
 `;
 
 const SubTitle = styled.h1`
-  ${tw`pt-2 xl:pt-4 text-2xl xl:text-4xl font-medium`}
+  ${tw`pt-2 xl:pt-4 text-2xl xl:text-3xl font-medium`}
 `;
 
 const FirstParagraph = styled.p`
