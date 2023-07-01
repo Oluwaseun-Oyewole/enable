@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CiGlobe } from "react-icons/ci";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link as RouterLink } from "react-router-dom";
 import { Link, animateScroll } from "react-scroll";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -115,7 +115,9 @@ export const Navigation = () => {
           <>
             <NavContent>
               <NavContentFirstContainer>
-                <Logo src={Enable} alt="logo" onClick={toggleHome} />
+                <RouterLink to="/">
+                  <Logo src={Enable} alt="logo" onClick={toggleHome} />
+                </RouterLink>
                 <NavMenu>
                   {navigationLinks?.map(
                     ({ pathname, title, scrollOffset }, index) => {

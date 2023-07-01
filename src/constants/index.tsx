@@ -1,13 +1,16 @@
+import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
+import MOtherBacking from "../assets/backing.svg";
 import BlogImage from "../assets/blog.svg";
+import getloan from "../assets/getloan.svg";
+import giveloan from "../assets/giveloan.svg";
+import guloan from "../assets/gurantee.svg";
 import HamzatImage from "../assets/hamzat.svg";
 import Hammage from "../assets/hamzat1.svg";
 import Market from "../assets/mark.png";
 import W from "../assets/pexels.jpg";
+import SmileImage from "../assets/smile.svg";
 import TailorImage from "../assets/tailor.svg";
-import getloan from "../assets/getloan.svg";
-import guloan from "../assets/gurantee.svg";
-import giveloan from "../assets/giveloan.svg";
-import { BsFacebook, BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
+
 interface NavigationInterface {
   title: string;
   pathname: string;
@@ -15,7 +18,7 @@ interface NavigationInterface {
 }
 
 export const navigationLinks: Array<NavigationInterface> = [
-  { title: "What we do", pathname: "/", scrollOffset: -50 },
+  { title: "What we do", pathname: "what-we-do", scrollOffset: -50 },
   { title: "Our Impact", pathname: "/", scrollOffset: -100 },
   { title: "Sponsor", pathname: "/", scrollOffset: -70 },
   { title: "About us", pathname: "/", scrollOffset: -70 },
@@ -257,4 +260,87 @@ export const partnerLogos = [
   "/src/assets/GrayGrids.svg",
   "/src/assets/lineicons.svg",
   "/src/assets/Uideck.svg",
+];
+
+interface WhatWeDoBannerData {
+  img?: string;
+  description?: string;
+  name?: string;
+  occupation?: string;
+}
+
+export const WhatWeDoBannerData: WhatWeDoBannerData[] = [
+  {
+    img: SmileImage,
+    description:
+      "“Thanks to Enable's support, I have been able to grow my business steadily and gain a foothold in the market. The loan allowed me to expand my product range and improve my shop's infrastructure. The financial boost has not only increased my revenue but has also instilled confidence in my entrepreneurial abilities.”",
+    name: "Hamzat",
+    occupation: "Yam Seller",
+  },
+
+  {
+    img: SmileImage,
+    description:
+      "“Thanks to Enable's support, I have been able to grow my business steadily and gain a foothold in the market. The loan allowed me to expand my product range and improve my shop's infrastructure. The financial boost has not only increased my revenue but has also instilled confidence in my entrepreneurial abilities.”",
+    name: "Hamzat",
+    occupation: "Yam Seller",
+  },
+
+  {
+    img: SmileImage,
+    description:
+      "“Thanks to Enable's support, I have been able to grow my business steadily and gain a foothold in the market. The loan allowed me to expand my product range and improve my shop's infrastructure. The financial boost has not only increased my revenue but has also instilled confidence in my entrepreneurial abilities.”",
+    name: "Hamzat",
+    occupation: "Yam Seller",
+  },
+
+  {
+    img: SmileImage,
+    description:
+      "“Thanks to Enable's support, I have been able to grow my business steadily and gain a foothold in the market. The loan allowed me to expand my product range and improve my shop's infrastructure. The financial boost has not only increased my revenue but has also instilled confidence in my entrepreneurial abilities.”",
+    name: "Hamzat",
+    occupation: "Yam Seller",
+  },
+];
+
+type FrequntlyAskedQuestion = {
+  heading: string;
+  description: string;
+};
+
+export const FAQuestions: FrequntlyAskedQuestion[] = [
+  {
+    heading: "Do I quality for a Enable loan",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam laboriosam facere quod rerum. Eveniet, minus esse repellendus facere  ducimus animi excepturi odit. Numquam dicta dolores ut eaque doloribus eaeveniet",
+  },
+
+  {
+    heading: "Do I quality for a Enable loan",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam laboriosam facere quod rerum. Eveniet, minus esse repellendus facere  ducimus animi excepturi odit. Numquam dicta dolores ut eaque doloribus eaeveniet",
+  },
+
+  {
+    heading: "Do I quality for a Enable loan",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam laboriosam facere quod rerum. Eveniet, minus esse repellendus facere  ducimus animi excepturi odit. Numquam dicta dolores ut eaque doloribus eaeveniet",
+  },
+];
+
+type EnableGlobaleData = {
+  description?: string;
+  imageSrc?: string;
+  buttonText?: string;
+  columnReversed?: boolean;
+};
+
+export const EnableGlobalData: EnableGlobaleData[] = [
+  {
+    description:
+      "Enable is a global non-profit organization that enhances the availability of funding for entrepreneurs in Nigeria. With over N1 billion raised on the platform, Enable has supported more than 2.5 million individuals. To obtain a loan from Enable, there is no need for a credit score, collateral, or business income. Are you ready to seize the opportunity and be the next success story?",
+    imageSrc: MOtherBacking,
+    buttonText: "Get A Loan",
+    columnReversed: false,
+  },
 ];

@@ -16,6 +16,15 @@ const Container = styled.main<{ click?: boolean }>`
       ? tw`bg-gray-200 transition-all ease-in-out duration-700 blur-[1px] lg:bg-transparent`
       : tw`bg-white`}
 `;
+
+const FooterContainer = styled.footer<{ click?: boolean }>`
+  ${tw`font-poppins`};
+  ${({ click }) =>
+    click
+      ? tw`bg-gray-200 transition-all ease-in-out duration-700 blur-[1px] lg:bg-transparent`
+      : tw`bg-white`}
+`;
+
 export const Layout = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -33,9 +42,10 @@ export const Layout = () => {
       <Container click={click} onClick={() => setClick(false)}>
         <Outlet />
       </Container>
-      <footer>
+
+      <FooterContainer click={click} onClick={() => setClick(false)}>
         <Footer />
-      </footer>
+      </FooterContainer>
     </LayoutContainer>
   );
 };
