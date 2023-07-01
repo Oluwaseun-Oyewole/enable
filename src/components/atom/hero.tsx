@@ -5,6 +5,7 @@ import { Container } from "../shared";
 import { Button } from "./button";
 
 type HeroPropsType = {
+  text?: string;
   heading?: string;
   subheading?: string;
   descriptions?: string;
@@ -17,7 +18,7 @@ type HeroPropsType = {
   buttonIcon?: ReactElement | undefined;
 };
 const HeroHeading = styled.h1`
-  ${tw`font-extrabold text-[30px] md:text-[47px] lg:text-[55px] xl:text-[52px]`}
+  ${tw`font-extrabold text-[30px] md:text-[47px] lg:text-[55px] xl:text-[50px]`}
 `;
 
 const HeadingSpan = styled.span`
@@ -41,6 +42,9 @@ const HeroContainer = styled.section`
 const HeroImage = styled.img`
   ${tw`pt-10 md:pt-24 xl:pt-0`}
 `;
+const Text = styled.span`
+  ${tw`text-purple`}
+`;
 const HeroHero = styled.div`
   ${tw`md:flex items-center flex-col xl:flex-row xl:justify-between pt-10 xl:pt-24`}
 
@@ -55,6 +59,7 @@ const HeroHero = styled.div`
 
 export const HeroComponent = ({
   heading,
+  text,
   subheading,
   descriptions,
   buttonClassName,
@@ -71,6 +76,7 @@ export const HeroComponent = ({
         <HeroHero>
           <div>
             <HeroContent>
+              <Text>{text}</Text>
               <HeroHeading>
                 {heading} <HeadingSpan>{spanText}</HeadingSpan> {subheading}
               </HeroHeading>

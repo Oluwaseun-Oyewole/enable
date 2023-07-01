@@ -8,6 +8,7 @@ import getloan from "../assets/getloan.svg";
 import guloan from "../assets/gurantee.svg";
 import giveloan from "../assets/giveloan.svg";
 import { BsFacebook, BsTwitter, BsYoutube, BsInstagram } from "react-icons/bs";
+import { CgQuote } from "react-icons/cg";
 interface NavigationInterface {
   title: string;
   pathname: string;
@@ -248,7 +249,7 @@ export const servicedLink = [
   },
   {
     title: "SchoolMoni",
-    pathname: "/",
+    pathname: "/schoolmoni",
   },
 ];
 
@@ -257,4 +258,13 @@ export const partnerLogos = [
   "/src/assets/GrayGrids.svg",
   "/src/assets/lineicons.svg",
   "/src/assets/Uideck.svg",
+];
+
+export const malcom = [
+  {
+    icon: CgQuote,
+    quote:
+      "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+    name: "Malcom X",
+  },
 ];

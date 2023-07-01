@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         clash: ["Clash Grotesk", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        bodins: ["bodin", "sans-serif"],
       },
       colors: {
         purple: "#530054",
