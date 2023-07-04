@@ -19,6 +19,7 @@ export default {
         hero_bg: "url('/src/assets/hero-bg.svg')",
         "hero-pattern":
           "linear-gradient(to right bottom, rgba('#7ed56f',0.8), rgba('#28b485',0.8)), url('/src/assets/hero.svg')",
+        join: "url('./src/assets/join.svg')",
       },
     },
   },
