@@ -19,8 +19,8 @@ type FlexComponentProps = {
 const FlexContainer = styled.div<{ columnReversed?: boolean }>`
   ${({ columnReversed }) =>
     columnReversed
-      ? tw`flex flex-col-reverse justify-center gap-10 lg:gap-10 lg:flex-row-reverse lg:justify-between items-center`
-      : tw`flex-col-reverse lg:flex-row flex justify-center gap-10  lg:justify-between items-center`}
+      ? tw`flex flex-col-reverse justify-center  lg:flex-row-reverse lg:justify-between items-center gap-40 `
+      : tw`flex-col-reverse lg:flex-row flex   items-center `}
 `;
 // `
 //   ${tw`flex flex-col-reverse justify-center gap-10 lg:gap-0 lg:flex-row lg:justify-between items-center`}
@@ -30,14 +30,16 @@ const FlexHeading = styled.div`
   ${tw`text-purple text-[1.5rem] pb-3`}
 `;
 const FlexText = styled.div`
-  ${tw``}
+  ${tw`xl:max-w-[80%]`}
 `;
 
 // const FlexParagraph = styled.p`
 //   ${tw`lg:text-lg leading-loose lg:pr-16 opacity-70`}
 // `;
 const FlexParagraph = styled.p`
-  ${tw`pb-6 text-sm tracking-wider font-extralight`}
+  ${tw`pb-6 text-sm tracking-wider font-extralight
+  xl:max-w-[80%]
+  `}
 `;
 
 const FlexImage = styled.img`
@@ -45,7 +47,9 @@ const FlexImage = styled.img`
 `;
 
 const FlexContent = styled.div`
-  ${tw`w-full lg:basis-[55%] lg:text-left`}
+  ${tw`w-full 
+  lg:basis-[55%]
+   lg:text-left`}
 `;
 export const FlexComponent = ({
   buttonClassName,
