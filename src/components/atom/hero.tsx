@@ -63,7 +63,7 @@ const HeroImage = styled.img<{ image?: string }>`
 const HeroHero = styled.div<{ image?: string }>`
   ${({ image }) =>
     image
-      ? tw`flex items-center flex-col xl:flex-row xl:justify-between pt-10 xl:pt-24`
+      ? tw`flex items-center md:gap-14 flex-col xl:flex-row xl:justify-between pt-10 xl:pt-24`
       : tw``};
 
   > div {

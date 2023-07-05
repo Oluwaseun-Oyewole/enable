@@ -19,7 +19,7 @@ const HeroButtonContainer = styled.div`
   ${tw`mt-3 w-full flex  md:flex-row md:gap-10 flex-col`}
 `;
 const HeroHero = styled.div`
-  ${tw`lg:flex items-center flex-col md:flex-row xl:justify-between md:px-10 py-16 md:gap-4`}
+  ${tw`lg:flex xl:items-center flex-col md:flex-row xl:justify-between md:px-10 py-16 md:gap-4`}
 
   > div {
     width: 50%;
@@ -28,7 +28,7 @@ const HeroHero = styled.div`
     `}
   }
   > img {
-    ${tw`xl:w-[40%] w-full block mx-auto`}
+    ${tw`md:w-[75%] xl:w-[40%] w-full block mx-auto`}
   }
 `;
 

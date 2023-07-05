@@ -14,13 +14,24 @@ type FlexComponentProps = {
     heading?: string;
     buttonText?: string;
   }>;
+  descClassName?: string;
 };
 
 const FlexContainer = styled.div<{ columnReversed?: boolean }>`
   ${({ columnReversed }) =>
     columnReversed
-      ? tw`flex flex-col-reverse justify-center  lg:flex-row-reverse lg:justify-between items-center gap-40 `
-      : tw`flex-col-reverse lg:flex-row flex   items-center `}
+      ? tw`flex flex-col-reverse justify-center gap-10 lg:gap-10 lg:flex-row-reverse lg:justify-between items-center`
+      : tw`flex-col-reverse lg:flex-row flex justify-center gap-10  lg:justify-between items-center`}
+
+  > div:first-child {
+    flex-basis: 50%;
+  }
+  > div:last-child {
+    flex-basis: 40%;
+    img {
+      // width: 600px;
+    }
+  }
 `;
 // `
 //   ${tw`flex flex-col-reverse justify-center gap-10 lg:gap-0 lg:flex-row lg:justify-between items-center`}
@@ -37,9 +48,7 @@ const FlexText = styled.div`
 //   ${tw`lg:text-lg leading-loose lg:pr-16 opacity-70`}
 // `;
 const FlexParagraph = styled.p`
-  ${tw`pb-6 text-sm tracking-wider font-extralight
-  xl:max-w-[80%]
-  `}
+  ${tw`pb-3  font-extralight`}
 `;
 
 const FlexImage = styled.img`
@@ -55,6 +64,7 @@ export const FlexComponent = ({
   buttonClassName,
   columnReversed,
   data,
+  descClassName,
 }: FlexComponentProps) => {
   return (
     <>
@@ -63,14 +73,16 @@ export const FlexComponent = ({
           <FlexContainer columnReversed={columnReversed}>
             <FlexContent key={index}>
               <FlexHeading>{el.heading}</FlexHeading>
-              <FlexParagraph>{el?.description}</FlexParagraph>
+              <FlexParagraph className={`${descClassName}`}>
+                {el?.description}
+              </FlexParagraph>
               <FlexText>
                 <ul>
                   <li className="pb-4">{el.text1}</li>
                   <li>{el.text2}</li>
                 </ul>
               </FlexText>
-              <div className="my-5">
+              <div className="">
                 <Button
                   className={buttonClassName}
                   children={`${el?.buttonText}`}

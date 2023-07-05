@@ -11,7 +11,7 @@ import W from "../assets/pexels.jpg";
 import SmileImage from "../assets/smile.svg";
 import TailorImage from "../assets/tailor.svg";
 import Mother from "../assets/motherwithboy.png";
-import Boy from "../assets/boy.png";
+import Boy from "../assets/boy.svg";
 import marketwomen from "../assets/marketwomen.svg";
 // import { CgQuote } from "react-icons/cg";
 interface NavigationInterface {

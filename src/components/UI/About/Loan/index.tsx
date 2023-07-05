@@ -18,7 +18,7 @@ const GridCardParagraph = styled.p`
 `;
 
 const GridImage = styled.img`
-  ${tw`w-[20%] xl:w-[18%]`}
+  ${tw`w-[20%] xl:w-[25%]`}
 `;
 
 const GridContainer = styled.section`
@@ -32,7 +32,7 @@ export const Loan = () => {
     <GridContainer>
       <Container>
         <Header>
-          <h1>How it Works</h1>
+          <h1 className="text-4xl lg:pt-4 pb-7">How it Works</h1>
         </Header>
         <GridCards>
           {loanData?.map((grid, index) => {

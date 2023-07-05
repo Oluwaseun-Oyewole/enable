@@ -1,9 +1,8 @@
 import React from "react";
-import { FlexComponent } from "../../../atom/flex";
-import { SchoolMoniData } from "../../../../constants";
-import { ChildData } from "../../../../constants";
-import tw from "twin.macro";
 import styled from "styled-components";
+import tw from "twin.macro";
+import { ChildData, SchoolMoniData } from "../../../../constants";
+import { FlexComponent } from "../../../atom/flex";
 import { Container } from "../../../shared";
 
 const BackgroundStyle = styled.div`
@@ -27,12 +26,14 @@ export const Studies = () => {
                   data={ChildData}
                   buttonClassName=""
                   columnReversed={true}
+                  descClassName="text-sm md:text-base"
                 />
               </div>
               <div>
                 <FlexComponent
                   buttonClassName=" border-purple text-white rounded-md bg-purple px-3 py-4  border-[2px] hover:opacity-70 font-medium text-sm"
                   data={SchoolMoniData}
+                  descClassName="text-sm md:text-base"
                 />
               </div>
             </PaddingContainer>
