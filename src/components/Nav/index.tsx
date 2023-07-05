@@ -103,7 +103,7 @@ export const MobileContainer = styled.div<{
 
 export const Navigation = () => {
   const { click, handleClick } = useClickContextProvider();
-  const [scrollNavbar, setScrollNavbar] = useState(true);
+  const [scrollNavbar] = useState(true);
   const toggleHome = (): void => {
     animateScroll.scrollToTop();
   };

@@ -76,7 +76,6 @@ const HeroHero = styled.div<{ image?: string }>`
 
 export const HeroComponent = ({
   heading,
-  text,
   subheading,
   descriptions,
   buttonClassName,
