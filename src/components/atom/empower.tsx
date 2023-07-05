@@ -67,7 +67,7 @@ export const Empower = ({ heading, paragraph, data }: EProps) => {
         <div className="max-w-6xl mx-auto">
           <Swiper
             modules={[Navigation, Pagination, Keyboard, Mousewheel, Autoplay]}
-            mousewheel={true}
+            // mousewheel={true}
             keyboard={true}
             loop={true}
             autoplay={{
