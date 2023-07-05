@@ -1,4 +1,4 @@
-import { ReactElement, createContext, useContext, useState } from "react";
+import { ReactElement, createContext, useState } from "react";
 
 interface ChildrenInterface {
   children: ReactElement;

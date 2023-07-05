@@ -1,4 +1,3 @@
-import HeroImg from "../../../assets/hero.svg";
 import { HeroComponent } from "../../../atom/hero";
 
 export const WhatWeDoHero = () => {
@@ -6,7 +5,6 @@ export const WhatWeDoHero = () => {
     <div>
       <HeroComponent
         heading="Are you seeking financial assistance to initiate or expand your"
-        // image={HeroImg}
         heading2="small business operations?"
         buttonText="Continue Application"
         buttonText2="Get A Loan"

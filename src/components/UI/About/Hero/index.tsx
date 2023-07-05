@@ -1,4 +1,3 @@
-import React from "react";
 import { HeroComponent } from "../../../atom/hero";
 import { about } from "../../../../constants";
 import styled from "styled-components";
@@ -17,7 +16,6 @@ export const Hero = () => {
       <div>
         <HeroComponent
           about="About us"
-          // image={HeroImg}
           subtext="In our ideal society, everyone has the ability to improve their lives financially."
           buttonText=""
           buttonText2=""

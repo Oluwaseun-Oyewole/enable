@@ -33,9 +33,6 @@ const FlexContainer = styled.div<{ columnReversed?: boolean }>`
     }
   }
 `;
-// `
-//   ${tw`flex flex-col-reverse justify-center gap-10 lg:gap-0 lg:flex-row lg:justify-between items-center`}
-// `;
 
 const FlexHeading = styled.div`
   ${tw`text-purple text-[1.5rem] pb-3`}
@@ -44,9 +41,6 @@ const FlexText = styled.div`
   ${tw`xl:max-w-[80%]`}
 `;
 
-// const FlexParagraph = styled.p`
-//   ${tw`lg:text-lg leading-loose lg:pr-16 opacity-70`}
-// `;
 const FlexParagraph = styled.p`
   ${tw`pb-3  font-extralight`}
 `;

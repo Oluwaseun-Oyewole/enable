@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Collapse, UnmountClosed } from "react-collapse";
-import { AiOutlineArrowDown, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import { BsArrowDownShort } from "react-icons/bs";
 import styled from "styled-components";
 import tw from "twin.macro";

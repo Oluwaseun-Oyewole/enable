@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import tw from "twin.macro";
@@ -14,9 +13,6 @@ const Links = styled.ul`
     }
   }
 `;
-// const LinkSpace = styled.div`
-// ${tw`py-5`}
-// `
 const HeadLink = styled.h3`
   ${tw`text-2xl md:pt-14 lg:pt-0 py-3 font-medium`}
 `;
@@ -52,10 +48,7 @@ export const Footer = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Explicabo, neque.
             </p>
-            <p>
-              {/* <span>{LuPhoneCall}</span> */}
-              +234 813 8002 859
-            </p>
+            <p>+234 813 8002 859</p>
           </div>
 
           <ContainerLink className="pt-8 md:pt-0">
@@ -91,7 +84,6 @@ export const Footer = () => {
             <HeadLink>Contact</HeadLink>
 
             <Links className="font-[400] text-[15px]">
-              {/* <ul> */}
               <li>
                 <a href="#">info@destinytrust.org</a>
               </li>
@@ -103,7 +95,6 @@ export const Footer = () => {
                 Off Bola Tinubu Road, Bogije <br />
                 Town, Ibeju-Lekki, Lagos
               </li>
-              {/* </ul> */}
             </Links>
           </ContainerLink>
 
@@ -113,11 +104,7 @@ export const Footer = () => {
             <HeadSocial>
               {socials?.map((social, index) => (
                 <a href="#" key={index} className="py-5">
-                  <social.icon
-                    size={social.size}
-                    // color={social.color}
-                    key={index}
-                  />
+                  <social.icon size={social.size} key={index} />
                 </a>
               ))}
             </HeadSocial>

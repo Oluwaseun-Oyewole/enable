@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../../../atom/button";
 import { Container } from "../../../shared";
 import styled from "styled-components";

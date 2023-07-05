@@ -1,5 +1,4 @@
 import { BsPlayCircleFill } from "react-icons/bs";
-// import HeroImg from "../../assets/hero.svg";
 import HeroImg from "../../../../assets/hero.svg";
 import { HeroComponent } from "../../../atom/hero";
 

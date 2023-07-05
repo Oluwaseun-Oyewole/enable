@@ -127,10 +127,3 @@ export const HeroComponent = ({
     </HeroContainer>
   );
 };
-
-// const FlexContainer = styled.div<{ columnReversed?: boolean }>`
-//   ${({ columnReversed }) =>
-//     columnReversed
-//       ? tw`flex flex-row-reverse justify-center lg:justify-between items-center gap-10 lg:gap-0`
-//       : tw`flex-row flex justify-center gap-10 lg:gap-0 lg:justify-between items-center`}
-// `;

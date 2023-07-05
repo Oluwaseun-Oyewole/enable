@@ -1,5 +1,3 @@
-import React from "react";
-// import { malcom } from "../../../../constants";
 import { malcom } from "../../../../constants";
 import tw from "twin.macro";
 import styled from "styled-components";

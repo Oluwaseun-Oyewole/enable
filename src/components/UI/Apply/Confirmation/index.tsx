@@ -26,10 +26,7 @@ export const Confirmation = () => {
       <ConfirmationVideo className="player-wrapper">
         <ReactPlayer
           url="https://youtu.be/OvQCekfyP6c"
-          //   width="100%"
           className="react-player"
-          //   width="100%"
-          //   height="100%"
         />
       </ConfirmationVideo>
     </ConfirmationContainer>
