@@ -52,7 +52,7 @@ const EmpowerGuaranteed = styled.p`
   ${tw`text-body`}
 `;
 
-export const Empower = ({ heading, paragraph, data }: EProps) => {
+export const Empower = ({ heading, paragraph }: EProps) => {
   const [prevEl, setPrevEl] = useState<HTMLElement | null>(null);
   const [nextEl, setNextEl] = useState<HTMLElement | null>(null);
 
